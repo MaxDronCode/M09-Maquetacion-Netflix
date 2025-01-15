@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Barrio&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+.logo{
+  width: 250px;
+  height: 250px;
+
+}
+
+.main-header{
+  display: flex;
+  justify-content: center;
+  height: 250px;
+
+  ul{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+
+    li{
+      margin: 0 10px;
+      font-family: "Barrio", serif;
+      font-size: 1.5rem;
+      cursor: pointer;
+
+      a{
+        text-decoration: none;
+        color: black;
+        transition: all 0.3s ease;
+
+        &:hover{
+         font-size: 1.6rem;
+        }
+      }
+    }
+  }
+}
+
+.sec-top-viewed{
+  font-family: "Barrio", serif;
+}
+
+.top-viewed-posters{
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+
+  img{
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+
+    &:hover{
+      transform: scale(1.1);
+    }
+  }
+}
